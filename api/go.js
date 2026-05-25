@@ -8,7 +8,7 @@ const WHATSAPP_PHONE = process.env.WHATSAPP_PHONE || "62811368348";
 // Pesan otomatis yang sudah terisi di kolom chat WhatsApp.
 // Bisa di-override per iklan dengan menambahkan parameter &text=... di URL landing.
 const DEFAULT_MESSAGE = process.env.DEFAULT_WA_MESSAGE ||
-  "Salam, saya ingin mengetahui dengan lebih lanjut mengenai koleksi kebaya Letter of Her. Mohon pencerahan, terima kasih.";
+  "Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya. Could you please share some details with me?";
 
 export default async function handler(req, res) {
   try {
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
     return res.end();
   } catch (e) {
     // Jika tracking gagal, user tetap diarahkan ke nomor tujuan utama.
-    const fallback = `https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}`;
+    const fallback = `https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
     res.writeHead(302, { Location: fallback });
     return res.end();
   }
