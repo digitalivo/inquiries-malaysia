@@ -1,0 +1,10 @@
+{
+  "name": "wa-single-whatsapp-tracker",
+  "version": "1.0.0",
+  "description": "Landing TikTok -> satu nomor WhatsApp dengan tracking klik (serverless, Vercel)",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@upstash/redis": "^1.34.3"
+  }
+}
