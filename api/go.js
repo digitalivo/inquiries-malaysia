@@ -8,7 +8,7 @@ const WHATSAPP_PHONE = process.env.WHATSAPP_PHONE || "62811368348";
 // Pesan otomatis yang sudah terisi di kolom chat WhatsApp.
 // Bisa di-override per iklan dengan menambahkan parameter &text=... di URL landing.
 const DEFAULT_MESSAGE = process.env.DEFAULT_WA_MESSAGE ||
-  "Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya. Could you please share some details with me?";
+  "Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya in Powder Pink on Ice Blue. Could you please share some details with me?";
 
 export default async function handler(req, res) {
   try {

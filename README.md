@@ -8,7 +8,7 @@ Dibuat untuk Vercel serverless + Upstash Redis.
 Semua klik WhatsApp diarahkan ke:
 
 ```txt
-https://api.whatsapp.com/send?phone=62811368348&text=Hi.%20I%20am%20interested%20in%20Letters%20of%20Her%20%7C%20Butuuni%20Senjana%20Kebaya.%20Could%20you%20please%20share%20some%20details%20with%20me%3F
+https://api.whatsapp.com/send?phone=62811368348&text=Hi.%20I%20am%20interested%20in%20Letters%20of%20Her%20%7C%20Butuuni%20Senjana%20Kebaya%20in%20Powder%20Pink%20on%20Ice%20Blue.%20Could%20you%20please%20share%20some%20details%20with%20me%3F
 ```
 
 Tidak ada roulette / round-robin lagi.
@@ -18,7 +18,7 @@ Tidak ada roulette / round-robin lagi.
 Saat tombol WhatsApp diklik, chat WhatsApp otomatis terisi pesan:
 
 ```txt
-Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya. Could you please share some details with me?
+Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya in Powder Pink on Ice Blue. Could you please share some details with me?
 ```
 
 Pesan ini diatur melalui env `DEFAULT_WA_MESSAGE`.
@@ -48,7 +48,7 @@ vercel.json        routing /dashboard
 ```txt
 DASHBOARD_PASSWORD=isi_password_dashboard
 WHATSAPP_PHONE=62811368348
-DEFAULT_WA_MESSAGE=Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya. Could you please share some details with me?
+DEFAULT_WA_MESSAGE=Hi. I am interested in Letters of Her | Butuuni Senjana Kebaya in Powder Pink on Ice Blue. Could you please share some details with me?
 ```
 
 Setelah Upstash Redis/KV terhubung dari Vercel Marketplace, env berikut akan tersedia otomatis:
